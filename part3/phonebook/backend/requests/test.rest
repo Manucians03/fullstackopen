@@ -1,0 +1,27 @@
+
+POST http://localhost:3001/persons/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Minh Nguyen",
+    "number": "612-322-8168"
+}  
+
+###
+POST http://localhost:3001/persons/ HTTP/1.1
+content-type: application/json
+{
+    "name": "Minh Nguyen",
+    "number": "0"
+}  
+
+###
+GET http://localhost:3001/persons/
+
+###
+POST http://localhost:3001/persons/ HTTP/1.1
+content-type: application/json
+{
+    "name": "Bad Request",
+    "status": 400
+}  
